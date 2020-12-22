@@ -10,11 +10,8 @@ export default class Callback {
   get groups() {
     return this[groupsSymbol];
   }
-  configGroup(name, defaultOrder = 1000, defaultExtra = 1000) {
-    this.groups[name] = [
-      parseInt(defaultOrder, 10),
-      parseInt(defaultExtra, 10)
-    ];
+  configGroup(name, order = 1000, defaultExtra = 1000) {
+    this.groups[name] = [parseInt(order, 10), parseInt(defaultExtra, 10)];
     return this;
   }
   getGroupConfig(name = "") {

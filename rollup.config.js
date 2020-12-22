@@ -11,8 +11,7 @@ export default [
     output: {
       name: "HookCallback",
       file: pkg.browser,
-      format: "umd",
-      exports: "named"
+      format: "umd"
     },
     plugins: [
       resolve(),
